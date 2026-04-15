@@ -15,7 +15,7 @@ def jouer():
         
         # Vérification du nombre de numéros (Il en faut 10 !)
         if len(choix_user) != 10:
-            messagebox.showwarning("Attention", "Il vous faut 10 nombres exactement ! ✨")
+            messagebox.showwarning("Attention", "Il vous faut 10 nombres exactement ! ")
             return
             
         tirage = generer_tirage()
@@ -32,16 +32,16 @@ def jouer():
         
         # Conditions de victoire
         if nb_gagnants >= 5: # On peut dire que 5 c'est déjà pas mal sur 10
-            messagebox.showinfo("Bravo ! 🌸", f"Gagné ! Vous avez {nb_gagnants} bons numéros !")
+            messagebox.showinfo("Bravo ! ", f"Gagné ! Vous avez {nb_gagnants} bons numéros !")
         else:
-            messagebox.showinfo("Dommage 🌙", f"Vous avez {nb_gagnants} bons numéros. Tentez encore !")
+            messagebox.showinfo("Dommage ", f"Vous avez {nb_gagnants} bons numéros. Tentez encore !")
             
     except ValueError:
-        messagebox.showerror("Erreur", "Veuillez entrer des nombres valides séparés par un espace ! 😊")
+        messagebox.showerror("Erreur", "Veuillez entrer des nombres valides séparés par un espace ! ")
 
 # --- Design de l'Interface Graphique ---
 root = tk.Tk()
-root.title("Loto Girly Edition ✨")
+root.title("Loto Girly Edition ")
 root.geometry("450x550") # Augmenté un peu pour que les 10 numéros tiennent bien
 root.configure(bg="#FFF0F5")
 
