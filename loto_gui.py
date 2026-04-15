@@ -61,7 +61,7 @@ entry = tk.Entry(root, font=("Helvetica", 14), justify='center', width=30,
 entry.pack(pady=15)
 
 # Bouton Jouer
-btn_jouer = tk.Button(root, text="Tirer au sort ✨", command=jouer, 
+btn_jouer = tk.Button(root, text="Tirer au sort ", command=jouer, 
                       bg="#FFB6C1", fg="white", font=("Helvetica", 12, "bold"),
                       relief="flat", cursor="hand2", padx=20, pady=10)
 btn_jouer.pack(pady=20)
